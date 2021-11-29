@@ -14,6 +14,12 @@ Of course you can use the auth_request module with any OAuth provide, but I want
 
 ## Server setup
 
+As always, clone fro, git or download, and make sure you install the dependencies:
+
+```
+npm install --only=prod
+```
+
 Password a bcrypt hashed in the config file. To use this, make sure you edit config.js to set you own secret key
 to sign the JSON web token. and add your list of users. To hash your password, you can use the pw-hash.js script.
 
@@ -33,7 +39,7 @@ Install pm2 if not done yet:
 sudo npm install -g pm2
 ```
 
-Start the server using pm2:
+Start the server using pm2, make sure it matches your server's locations:
 
 ```
 pm2 start /home/pi/auth_server/index.js
