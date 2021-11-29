@@ -109,7 +109,7 @@ server {
     index index.html index.htm index.nginx-debian.html;
 
     server_name _;
-    ssl_certificate /etc/letsencrypt/live/XXXXXXXXXXXXXXX/cert.pem;
+    ssl_certificate /etc/letsencrypt/live/XXXXXXXXXXXXXXX/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/XXXXXXXXXXXXXXX/privkey.pem;
 
     location /login {
